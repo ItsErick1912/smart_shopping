@@ -80,21 +80,26 @@ nav a:hover {
 
 .producto img {
   width: 100%;
-  max-width: 220px;
-  height: auto;
-  margin: 0 auto 15px;
-  display: block;
+  max-width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.producto:hover img {
+  transform: scale(1.05);
 }
 
 .precio {
-  color: #d32f2f;
+  color: #a12a2a;
   font-size: 1.5em;
   margin: 15px 0;
   font-weight: bold;
 }
 
 .boton-comprar {
-  background: #00c853;
+  background: #14974a;
   color: white;
   padding: 12px 25px;
   border: none;
